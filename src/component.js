@@ -7,11 +7,15 @@ function Component (props){
 
  const containerStyle = {
     width: 250, 
-    height: 290,
-    backgroundImage, 
+    height: 230,
+    backgroundImage,
+    backgroundSize: "cover", 
+    //backgroundRepeat: "no-repeat",
     borderRadius: 25,
     position: "relative",
- }
+    boxShadow: "3px 3px 2px 0px rgba(128, 128, 128, 0.30)",
+    
+   }
 
  const [isHovered, setIsHovered] = useState(false);
     
@@ -29,8 +33,10 @@ function Component (props){
     borderRadius: 25,
     position: "absolute",
     bottom: 0,
-    background: isHovered ? "red": "#F34949",
-    color: isHovered ? "#161A1D": "white",
+    background: isHovered ? "#BA181B": "#F34949",
+    fontWeight: isHovered ? "bold" : "normal",
+    color:  "white",
+    letterSpacing: 1,
     text,
     textAlign: "center",
     fontSize: 20,
